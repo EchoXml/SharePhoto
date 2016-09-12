@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.echo.sharephoto.MainActivity">
+    <LinearLayout
+        android:id="@+id/llOp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnRequestShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请求分享"/>
+
+        <Button
+            android:id="@+id/btnTestNfc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="测试NFC"/>
+        <Button
+            android:id="@+id/btnUseNfc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="NFC发送文件"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_below="@+id/llOp"
+        android:id="@+id/ivPhoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+</RelativeLayout>
